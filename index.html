@@ -12,17 +12,23 @@
 }
 
 .hero-button{
-  padding:12px;
+  padding:16px;
   font-size:16px;
-  border:1px solid #ccc;
   border-radius:8px;
+  border:1px solid #ccc;
   background:white;
 }
 
 #all-heroes-button{
   width:100%;
+  padding:14px;
+  font-size:18px;
+  font-weight:bold;
+  border-radius:8px;
+  border:none;
+  background:#ff9800;
+  color:white;
   margin-bottom:10px;
-  padding:12px;
 }
 
 </style>
@@ -34,8 +40,11 @@
 
 <h2>ヒーローで探す</h2>
 
-<button onclick="showAllHeroes()">
-全ヒーロー
+<button
+  id="all-heroes-button"
+  onclick="showAllHeroes()"
+>
+  全ヒーロー
 </button>
 
 <div id="hero-list"></div>
