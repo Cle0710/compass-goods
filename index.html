@@ -31,6 +31,12 @@
   margin-bottom:10px;
 }
 
+.selected-hero{
+  background:#ff9800;
+  color:white;
+  font-weight:bold;
+}
+
 </style>
 
 </head>
@@ -163,6 +169,7 @@ document.getElementById("jan-code").textContent = series.janCode;
 document.getElementById("hero-list").innerHTML =
   heroes.map(hero => `
     <button
+      id="hero-${hero.id}"
       class="hero-button"
       onclick="selectHero(${hero.id})"
     >
@@ -199,6 +206,16 @@ function renderGoods() {
 function selectHero(heroId) {
 
   selectedHeroId = heroId;
+
+  document
+    .querySelectorAll(".hero-button")
+    .forEach(button =>
+      button.classList.remove("selected-hero")
+    );
+
+  document
+    .getElementById(`hero-${heroId}`)
+    .classList.add("selected-hero");
 
   const hero =
     heroes.find(h => h.id === heroId);
