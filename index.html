@@ -1,2 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>コンパスグッズ管理</title>
+</head>
+<body>
+
 <h1>コンパスグッズ管理</h1>
-<p>開発中</p>
+
+<h2>ヒーロー一覧</h2>
+<div id="hero-list"></div>
+
+<hr>
+
+<h2>グッズ一覧</h2>
+<div id="goods-list"></div>
+
+<script>
+const heroes = [
+  { id: 1, name: "十文字 アタリ" },
+  { id: 2, name: "ジャスティス ハンコック" },
+  { id: 3, name: "リリカ" }
+];
+
+const goods = [
+  {
+    id: "0001-01",
+    name: "ウエハースカード 十文字アタリ",
+    heroTags: [1]
+  },
+  {
+    id: "0001-02",
+    name: "ウエハースカードホロ 十文字アタリ",
+    heroTags: [1]
+  },
+  {
+    id: "0001-03",
+    name: "ウエハース特典01",
+    heroTags: [1, 2, 3]
+  }
+];
+
+document.getElementById("hero-list").innerHTML =
+  heroes.map(hero => hero.name).join("<br>");
+
+document.getElementById("goods-list").innerHTML =
+  goods.map(item => {
+    const tags = item.heroTags
+      .map(id => heroes.find(hero => hero.id === id)?.name)
+      .join("、");
+
+    return `
+      <div>
+        <b>${item.name}</b><br>
+        タグ: ${tags}
+      </div>
+      <hr>
+    `;
+  }).join("");
+</script>
+
+</body>
+</html>
