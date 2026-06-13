@@ -8,6 +8,14 @@
 
 <h1>コンパスグッズ管理</h1>
 
+<h2 id="series-name"></h2>
+
+<p>発売日: <span id="release-date"></span></p>
+<p>価格: <span id="price"></span>円</p>
+<p>商品コード: <span id="jan-code"></span></p>
+
+<hr>
+
 <h2>ヒーロー一覧</h2>
 <div id="hero-list"></div>
 
@@ -17,6 +25,15 @@
 <div id="goods-list"></div>
 
 <script>
+
+const series = {
+  id: "0001",
+  name: "#コンパス 戦闘摂理解析システム トレーディングカード付きウエハース",
+  releaseDate: "2026/05/09",
+  price: 290,
+  janCode: "4573668402579"
+};
+
 const heroes = [
   { id: 1, name: "十文字 アタリ" },
   { id: 2, name: "ジャスティス ハンコック" },
@@ -40,6 +57,11 @@ const goods = [
     heroTags: [1, 2, 3]
   }
 ];
+
+document.getElementById("series-name").textContent = series.name;
+document.getElementById("release-date").textContent = series.releaseDate;
+document.getElementById("price").textContent = series.price;
+document.getElementById("jan-code").textContent = series.janCode;
 
 document.getElementById("hero-list").innerHTML =
   heroes.map(hero => hero.name).join("<br>");
