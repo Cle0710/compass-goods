@@ -43,6 +43,11 @@
 <hr>
 
 <h2>グッズ一覧</h2>
+
+<p id="selected-hero">
+全ヒーロー表示中
+</p>
+
 <div id="goods-list"></div>
 
 <script>
@@ -126,6 +131,8 @@ const goods = [
   }
 ];
 
+let selectedHeroId = null;
+
 document.getElementById("series-name").textContent = series.name;
 document.getElementById("release-date").textContent = series.releaseDate;
 document.getElementById("price").textContent = series.price;
@@ -133,25 +140,55 @@ document.getElementById("jan-code").textContent = series.janCode;
 
 document.getElementById("hero-list").innerHTML =
   heroes.map(hero => `
-    <button class="hero-button">
+    <button
+      class="hero-button"
+      onclick="selectHero(${hero.id})"
+    >
       ${hero.name}
     </button>
   `).join("");
 
-document.getElementById("goods-list").innerHTML =
-  goods.map(item => {
-    const tags = item.heroTags
-      .map(id => heroes.find(hero => hero.id === id)?.name)
-      .join("、");
+function renderGoods() {
 
-    return `
-      <div>
-        <b>${item.name}</b><br>
-        タグ: ${tags}
-      </div>
-      <hr>
-    `;
-  }).join("");
+  const filteredGoods =
+    selectedHeroId === null
+      ? goods
+      : goods.filter(item =>
+          item.heroTags.includes(selectedHeroId)
+        );
+
+  document.getElementById("goods-list").innerHTML =
+    filteredGoods.map(item => {
+
+      const tags = item.heroTags
+        .map(id => heroes.find(hero => hero.id === id)?.name)
+        .join("、");
+
+      return `
+        <div>
+          <b>${item.name}</b><br>
+          タグ: ${tags}
+        </div>
+        <hr>
+      `;
+    }).join("");
+}
+
+function selectHero(heroId) {
+
+  selectedHeroId = heroId;
+
+  const hero =
+    heroes.find(h => h.id === heroId);
+
+  document.getElementById("selected-hero").textContent =
+    hero.name + " のグッズ";
+
+  renderGoods();
+}
+
+renderGoods();
+
 </script>
 
 </body>
