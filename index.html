@@ -3,6 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>コンパスグッズ管理</title>
+
+<style>
+#hero-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.hero-button{
+  padding:12px;
+  font-size:16px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  background:white;
+}
+</style>
+
 </head>
 <body>
 
@@ -111,7 +128,11 @@ document.getElementById("price").textContent = series.price;
 document.getElementById("jan-code").textContent = series.janCode;
 
 document.getElementById("hero-list").innerHTML =
-  heroes.map(hero => hero.name).join("<br>");
+  heroes.map(hero => `
+    <button class="hero-button">
+      ${hero.name}
+    </button>
+  `).join("");
 
 document.getElementById("goods-list").innerHTML =
   goods.map(item => {
