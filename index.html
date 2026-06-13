@@ -26,11 +26,17 @@
 <h1>コンパスグッズ管理</h1>
 
 <h2>ヒーローで探す</h2>
+
+<button onclick="showAllHeroes()">
+全ヒーロー
+</button>
+
 <div id="hero-list"></div>
 
 <hr>
 
 <details open>
+
   <summary>シリーズ情報</summary>
 
   <h2 id="series-name"></h2>
@@ -183,6 +189,16 @@ function selectHero(heroId) {
 
   document.getElementById("selected-hero").textContent =
     hero.name + " のグッズ";
+
+  renderGoods();
+}
+
+function showAllHeroes() {
+
+  selectedHeroId = null;
+
+  document.getElementById("selected-hero").textContent =
+    "全ヒーロー表示中";
 
   renderGoods();
 }
