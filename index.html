@@ -81,6 +81,10 @@
 全ヒーロー表示中
 </p>
 
+<p id="goods-count">
+0件
+</p>
+
 <div id="goods-list"></div>
 
 <script>
@@ -184,14 +188,17 @@ document.getElementById("hero-list").innerHTML =
 
 function renderGoods() {
 
-  const filteredGoods =
-    selectedHeroId === null
-      ? goods
-      : goods.filter(item =>
-          item.heroTags.includes(selectedHeroId)
-        );
+const filteredGoods =
+  selectedHeroId === null
+    ? goods
+    : goods.filter(item =>
+        item.heroTags.includes(selectedHeroId)
+      );
 
-  document.getElementById("goods-list").innerHTML =
+document.getElementById("goods-count").textContent =
+  filteredGoods.length + "件";
+
+document.getElementById("goods-list").innerHTML =
     filteredGoods.map(item => {
 
       const tags = item.heroTags
