@@ -44,16 +44,21 @@
 
 <h1>コンパスグッズ管理</h1>
 
-<h2>ヒーローで探す</h2>
+<details>
 
-<button
-  id="all-heroes-button"
-  onclick="showAllHeroes()"
->
-  全ヒーロー
-</button>
+  <summary>ヒーローで探す</summary>
 
-<div id="hero-list"></div>
+  <button
+    id="all-heroes-button"
+    class="selected-hero"
+    onclick="showAllHeroes()"
+  >
+    全ヒーロー
+  </button>
+
+  <div id="hero-list"></div>
+
+</details>
 
 <hr>
 
@@ -213,9 +218,13 @@ function selectHero(heroId) {
       button.classList.remove("selected-hero")
     );
 
-  document
-    .getElementById(`hero-${heroId}`)
-    .classList.add("selected-hero");
+document
+  .getElementById(`hero-${heroId}`)
+  .classList.add("selected-hero");
+
+document
+  .getElementById("all-heroes-button")
+  .classList.remove("selected-hero");
 
   const hero =
     heroes.find(h => h.id === heroId);
@@ -229,6 +238,16 @@ function selectHero(heroId) {
 function showAllHeroes() {
 
   selectedHeroId = null;
+
+  document
+    .querySelectorAll(".hero-button")
+    .forEach(button =>
+      button.classList.remove("selected-hero")
+    );
+
+  document
+    .getElementById("all-heroes-button")
+    .classList.add("selected-hero");
 
   document.getElementById("selected-hero").textContent =
     "全ヒーロー表示中";
