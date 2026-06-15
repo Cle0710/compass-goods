@@ -92,6 +92,14 @@
 
 <div id="goods-list"></div>
 
+<hr>
+
+<h2>グッズ詳細</h2>
+
+<div id="goods-detail">
+グッズを選択してください
+</div>
+
 <script>
 
 const series = {
@@ -157,18 +165,25 @@ const heroes = [
 
 const goods = [
   {
-    id: "0001-01",
-    name: "ウエハースカード 十文字アタリ",
-    heroTags: [1]
+  id: "0001-01",
+  name: "ウエハースカード 十文字アタリ",
+  type: "カード",
+  seriesId: "0001",
+  heroTags: [1]
   },
+
   {
     id: "0001-02",
     name: "ウエハースカードホロ 十文字アタリ",
+    type: "カード",
+    seriesId: "0001",
     heroTags: [1]
   },
   {
     id: "0001-03",
     name: "ウエハース特典01",
+    type: "カード",
+    seriesId: "0001",
     heroTags: [1, 2, 3]
   }
 ];
@@ -211,11 +226,13 @@ document.getElementById("goods-list").innerHTML =
         .join("、");
 
       return `
-        <div>
+        <div
+          onclick="showGoodsDetail('${item.id}')"
+          style="padding:10px;border:1px solid #ccc;border-radius:8px;margin-bottom:8px;"
+        >
           <b>${item.name}</b><br>
           対象ヒーロー: ${tags}
         </div>
-        <hr>
       `;
     }).join("");
 }
@@ -265,6 +282,30 @@ function showAllHeroes() {
     "全ヒーロー表示中";
 
   renderGoods();
+}
+
+function showGoodsDetail(goodsId) {
+
+  const item =
+    goods.find(g => g.id === goodsId);
+
+  const heroNames =
+    item.heroTags
+      .map(id =>
+        heroes.find(h => h.id === id)?.name
+      )
+      .join("、");
+
+  document.getElementById("goods-detail").innerHTML =
+    `
+    <h3>${item.name}</h3>
+
+    <p><b>種類</b><br>${item.type}</p>
+
+    <p><b>シリーズID</b><br>${item.seriesId}</p>
+
+    <p><b>対象ヒーロー</b><br>${heroNames}</p>
+    `;
 }
 
 renderGoods();
