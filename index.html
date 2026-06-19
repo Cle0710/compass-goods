@@ -296,15 +296,21 @@ function showGoodsDetail(goodsId) {
       )
       .join("、");
 
+  const goodsSeries = series;
+
   document.getElementById("goods-detail").innerHTML =
     `
     <h3>${item.name}</h3>
 
     <p><b>種類</b><br>${item.type}</p>
 
-    <p><b>シリーズID</b><br>${item.seriesId}</p>
+    <p><b>シリーズ</b><br>${goodsSeries.name}</p>
 
-    <p><b>対象ヒーロー</b><br>${heroNames}</p>
+    <p><b>発売日</b><br>${goodsSeries.releaseDate}</p>
+
+    <p><b>価格</b><br>${goodsSeries.price}円</p>
+
+        <p><b>対象ヒーロー</b><br>${heroNames}</p>
     `;
 }
 
