@@ -188,7 +188,21 @@ const goods = [
   }
 ];
 
+let ownedCounts =
+  JSON.parse(
+    localStorage.getItem("ownedCounts")
+  ) || {};
+
 let selectedHeroId = null;
+
+function saveOwnedCounts(){
+
+  localStorage.setItem(
+    "ownedCounts",
+    JSON.stringify(ownedCounts)
+  );
+
+}
 
 document.getElementById("series-name").textContent = series.name;
 document.getElementById("release-date").textContent = series.releaseDate;
@@ -225,15 +239,61 @@ document.getElementById("goods-list").innerHTML =
         .map(id => heroes.find(hero => hero.id === id)?.name)
         .join("、");
 
+      const owned =
+        ownedCounts[item.id] || 0;
+
       return `
         <div
-          onclick="showGoodsDetail('${item.id}')"
-          style="padding:10px;border:1px solid #ccc;border-radius:8px;margin-bottom:8px;"
+          style="
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            margin-bottom:8px;
+          "
         >
-          <b>${item.name}</b><br>
-          対象ヒーロー: ${tags}
+
+          <div onclick="showGoodsDetail('${item.id}')">
+
+            <b>${item.name}</b><br>
+            対象ヒーロー: ${tags}
+
+          </div>
+
+          <div style="
+            display:flex;
+            gap:8px;
+            align-items:center;
+            margin-top:10px;
+          ">
+
+            <button
+              onclick="changeOwnedCount('${item.id}',-1)"
+            >
+              −
+            </button>
+
+            <input
+              type="number"
+              min="0"
+              value="${owned}"
+              onchange="updateOwnedCount('${item.id}',this.value)"
+              style="
+                width:60px;
+                text-align:center;
+              "
+            >
+
+            <button
+              onclick="changeOwnedCount('${item.id}',1)"
+            >
+              +
+            </button>
+
+          </div>
+
         </div>
       `;
+
     }).join("");
 }
 
@@ -312,6 +372,31 @@ function showGoodsDetail(goodsId) {
 
         <p><b>対象ヒーロー</b><br>${heroNames}</p>
     `;
+}
+
+function changeOwnedCount(goodsId, amount){
+
+  ownedCounts[goodsId] =
+    Math.max(
+      0,
+      (ownedCounts[goodsId] || 0)
+      + amount
+    );
+
+  saveOwnedCounts();
+
+  renderGoods();
+}
+
+function updateOwnedCount(goodsId,value){
+
+  ownedCounts[goodsId] =
+    Math.max(
+      0,
+      Number(value) || 0
+    );
+
+  saveOwnedCounts();
 }
 
 renderGoods();
