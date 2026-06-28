@@ -188,18 +188,28 @@ const goods = [
   }
 ];
 
-let ownedCounts =
+let storedCounts =
   JSON.parse(
-    localStorage.getItem("ownedCounts")
+    localStorage.getItem("storedCounts")
+  ) || {};
+
+let displayedCounts =
+  JSON.parse(
+    localStorage.getItem("displayedCounts")
   ) || {};
 
 let selectedHeroId = null;
 
-function saveOwnedCounts(){
+function saveCounts(){
 
   localStorage.setItem(
-    "ownedCounts",
-    JSON.stringify(ownedCounts)
+    "storedCounts",
+    JSON.stringify(storedCounts)
+  );
+
+  localStorage.setItem(
+    "displayedCounts",
+    JSON.stringify(displayedCounts)
   );
 
 }
@@ -338,7 +348,7 @@ function showGoodsDetail(goodsId) {
 
     <p><b>対象ヒーロー</b><br>${heroNames}</p>
 
-    <p><b>所持数</b></p>
+    <p><b>保管数</b></p>
 
     <div
       style="
