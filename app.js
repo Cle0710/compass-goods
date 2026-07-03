@@ -183,35 +183,6 @@ document.getElementById("goods-list").innerHTML =
     `;
 
   }).join("");
-
-      <div
-        onclick="showGoodsDetail('${item.id}')"
-        style="
-          display:flex;
-          gap:12px;
-          align-items:center;
-          padding:10px;
-          border:1px solid #ccc;
-          border-radius:8px;
-          margin-bottom:8px;
-          cursor:pointer;
-        "
-      >
-
-        ${thumbnail}
-
-        <div>
-
-          <b>${item.name}</b><br>
-
-          対象ヒーロー: ${tags}
-
-        </div>
-
-      </div>
-    `;
-
-  }).join("");
 }
 
 function selectHero(heroId) {
