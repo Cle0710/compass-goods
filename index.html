@@ -389,6 +389,41 @@ function showGoodsDetail(goodsId) {
 
     </div>
 
+    <p><b>飾っている数</b></p>
+
+    <div
+      style="
+        display:flex;
+        gap:8px;
+        align-items:center;
+      "
+    >
+
+      <button
+        onclick="changeDisplayedCount('${item.id}',-1)"
+      >
+        −
+      </button>
+
+      <input
+        type="number"
+        min="0"
+        value="${displayed}"
+        onchange="updateDisplayedCount('${item.id}',this.value)"
+        style="
+          width:70px;
+          text-align:center;
+        "
+      >
+
+      <button
+        onclick="changeDisplayedCount('${item.id}',1)"
+      >
+        ＋
+      </button>
+
+    </div>
+
     <p><b>所持数</b><br>${total}</p>
 
     `;
@@ -412,6 +447,35 @@ function changeStoredCount(goodsId, amount){
 function updateStoredCount(goodsId,value){
 
   storedCounts[goodsId] =
+    Math.max(
+      0,
+      Number(value) || 0
+    );
+
+  saveCounts();
+
+  showGoodsDetail(goodsId);
+
+}
+
+function changeDisplayedCount(goodsId, amount){
+
+  displayedCounts[goodsId] =
+    Math.max(
+      0,
+      (displayedCounts[goodsId] || 0)
+      + amount
+    );
+
+  saveCounts();
+
+  showGoodsDetail(goodsId);
+
+}
+
+function updateDisplayedCount(goodsId,value){
+
+  displayedCounts[goodsId] =
     Math.max(
       0,
       Number(value) || 0
