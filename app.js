@@ -123,39 +123,67 @@ document.getElementById("goods-list").innerHTML =
         )
         .join("、");
 
-    const thumbnail =
-      item.image
-        ? `
-          <img
-            src="${item.image}"
-            style="
-              width:60px;
-              height:60px;
-              object-fit:cover;
-              border:1px solid #ccc;
-              border-radius:6px;
-            "
-          >
-        `
-        : `
-          <div
-            style="
-              width:60px;
-              height:60px;
-              border:1px solid #ccc;
-              border-radius:6px;
-              display:flex;
-              justify-content:center;
-              align-items:center;
-              font-size:10px;
-              color:#999;
-            "
-          >
-            No Image
-          </div>
-        `;
-
     return `
+      <div
+        onclick="showGoodsDetail('${item.id}')"
+        style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          padding:10px;
+          border:1px solid #ccc;
+          border-radius:8px;
+          margin-bottom:8px;
+          cursor:pointer;
+        "
+      >
+
+        ${
+          item.image
+            ? `
+              <img
+                src="${item.image}"
+                style="
+                  width:60px;
+                  height:60px;
+                  object-fit:cover;
+                  border:1px solid #ccc;
+                  border-radius:6px;
+                "
+              >
+            `
+            : `
+              <div
+                style="
+                  width:60px;
+                  height:60px;
+                  border:1px solid #ccc;
+                  border-radius:6px;
+                  display:flex;
+                  justify-content:center;
+                  align-items:center;
+                  font-size:10px;
+                  color:#999;
+                "
+              >
+                No Image
+              </div>
+            `
+        }
+
+        <div>
+
+          <b>${item.name}</b><br>
+
+          対象ヒーロー: ${tags}
+
+        </div>
+
+      </div>
+    `;
+
+  }).join("");
+
       <div
         onclick="showGoodsDetail('${item.id}')"
         style="
