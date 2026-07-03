@@ -168,6 +168,7 @@ const goods = [
   id: "0001-01",
   name: "ウエハースカード 十文字アタリ",
   type: "カード",
+  image: "",
   seriesId: "0001",
   heroTags: [1]
   },
@@ -175,14 +176,16 @@ const goods = [
   {
     id: "0001-02",
     name: "ウエハースカードホロ 十文字アタリ",
-    type: "カード",
-    seriesId: "0001",
+  type: "カード",
+  image: "",
+  seriesId: "0001",
     heroTags: [1]
   },
   {
     id: "0001-03",
     name: "ウエハース特典アタリ,ジャスティス,リリカ,乃保",
     type: "カード",
+    image: "",
     seriesId: "0001",
     heroTags: [1, 2, 3, 4]
   }
@@ -340,9 +343,43 @@ function showGoodsDetail(goodsId) {
   const total =
     stored + displayed;
 
+  const imageHtml =
+    item.image
+      ? `
+        <img
+          src="${item.image}"
+          style="
+            width:180px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            display:block;
+            margin-bottom:15px;
+          "
+        >
+      `
+      : `
+        <div
+          style="
+            width:180px;
+            height:180px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:#999;
+            margin-bottom:15px;
+          "
+        >
+          No Image
+        </div>
+      `;
+
   document.getElementById("goods-detail").innerHTML =
-    `
-    <h3>${item.name}</h3>
+`
+${imageHtml}
+
+<h3>${item.name}</h3>
 
     <p><b>種類</b><br>${item.type}</p>
 
