@@ -114,31 +114,76 @@ document.getElementById("goods-count").textContent =
   filteredGoods.length + "件";
 
 document.getElementById("goods-list").innerHTML =
-    filteredGoods.map(item => {
+  filteredGoods.map(item => {
 
-      const tags = item.heroTags
-        .map(id => heroes.find(hero => hero.id === id)?.name)
+    const tags =
+      item.heroTags
+        .map(id =>
+          heroes.find(hero => hero.id === id)?.name
+        )
         .join("、");
 
-      return `
-        <div
-          onclick="showGoodsDetail('${item.id}')"
-          style="
-            padding:10px;
-            border:1px solid #ccc;
-            border-radius:8px;
-            margin-bottom:8px;
-            cursor:pointer;
-          "
-        >
+    const thumbnail =
+      item.image
+        ? `
+          <img
+            src="${item.image}"
+            style="
+              width:60px;
+              height:60px;
+              object-fit:cover;
+              border:1px solid #ccc;
+              border-radius:6px;
+            "
+          >
+        `
+        : `
+          <div
+            style="
+              width:60px;
+              height:60px;
+              border:1px solid #ccc;
+              border-radius:6px;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              font-size:10px;
+              color:#999;
+            "
+          >
+            No Image
+          </div>
+        `;
+
+    return `
+      <div
+        onclick="showGoodsDetail('${item.id}')"
+        style="
+          display:flex;
+          gap:12px;
+          align-items:center;
+          padding:10px;
+          border:1px solid #ccc;
+          border-radius:8px;
+          margin-bottom:8px;
+          cursor:pointer;
+        "
+      >
+
+        ${thumbnail}
+
+        <div>
 
           <b>${item.name}</b><br>
+
           対象ヒーロー: ${tags}
 
         </div>
-      `;
 
-    }).join("");
+      </div>
+    `;
+
+  }).join("");
 }
 
 function selectHero(heroId) {
