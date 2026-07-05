@@ -1,66 +1,75 @@
 const goods = [
+
   {
-  id: "0001-001",
-  name: "ウエハースカード 十文字アタリ",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
-  heroTags: [1]
+    id: "0001-001",
+    name: "ウエハースカード 十文字アタリ",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
+    heroTags: [1]
   },
   {
     id: "0001-002",
     name: "ウエハースカード ホロ 十文字アタリ",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [1]
   },
   {
     id: "0001-003",
     name: "ウエハースカード ジャスティス ハンコック",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [2]
   },
   {
     id: "0001-004",
     name: "ウエハースカード ホロ ジャスティス ハンコック",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [2]
   },
   {
     id: "0001-005",
     name: "ウエハースカード リリカ",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [3]
   },
   {
     id: "0001-006",
     name: "ウエハースカード ホロ リリカ",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [3]
   },
   {
     id: "0001-007",
     name: "ウエハースカード 双挽 乃保",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [4]
   },
   {
     id: "0001-008",
     name: "ウエハースカード ホロ 双挽 乃保",
-  type: "カード",
-  image: "",
-  seriesId: "0001",
+    type: "カード",
+    image: "",
+    seriesId: "0001",
+    price: 290,
     heroTags: [4]
   },
   {
@@ -69,6 +78,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [5]
   },
   {
@@ -77,6 +87,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [5]
   },
   {
@@ -85,6 +96,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [6]
   },
   {
@@ -93,6 +105,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [6]
   },
   {
@@ -101,6 +114,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [7]
   },
   {
@@ -109,6 +123,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [7]
   },
   {
@@ -117,6 +132,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [8]
   },
   {
@@ -125,6 +141,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [8]
   },
   {
@@ -133,6 +150,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [9]
   },
   {
@@ -141,6 +159,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [9]
   },
   {
@@ -149,6 +168,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [10]
   },
   {
@@ -157,6 +177,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [10]
   },
   {
@@ -165,6 +186,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [11]
   },
   {
@@ -173,6 +195,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [11]
   },
   {
@@ -181,6 +204,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [12]
   },
   {
@@ -189,6 +213,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [12]
   },
   {
@@ -197,6 +222,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [13]
   },
   {
@@ -205,6 +231,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [13]
   },
   {
@@ -213,6 +240,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [14]
   },
   {
@@ -221,6 +249,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [14]
   },
   {
@@ -229,6 +258,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [15]
   },
   {
@@ -237,6 +267,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [15]
   },
   {
@@ -245,6 +276,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [16]
   },
   {
@@ -253,6 +285,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [16]
   },
   {
@@ -261,6 +294,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [17]
   },
   {
@@ -269,6 +303,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [17]
   },
   {
@@ -277,6 +312,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [18]
   },
   {
@@ -285,6 +321,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [18]
   },
   {
@@ -293,6 +330,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [19]
   },
   {
@@ -301,6 +339,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [19]
   },
   {
@@ -309,6 +348,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [20]
   },
   {
@@ -317,6 +357,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [20]
   },
   {
@@ -325,6 +366,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [21]
   },
   {
@@ -333,6 +375,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [21]
   },
   {
@@ -341,6 +384,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [22]
   },
   {
@@ -349,6 +393,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [22]
   },
   {
@@ -357,6 +402,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [23]
   },
   {
@@ -365,6 +411,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [23]
   },
   {
@@ -373,6 +420,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [24]
   },
   {
@@ -381,6 +429,7 @@ const goods = [
     type: "カード",
     image: "",
     seriesId: "0001",
+    price: 290,
     heroTags: [24]
   },
   {
@@ -388,6 +437,7 @@ const goods = [
     name: "ウエハースカード トマス",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [25]
   },
@@ -396,6 +446,7 @@ const goods = [
     name: "ウエハースカード ホロ トマス",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [25]
   },
@@ -404,6 +455,7 @@ const goods = [
     name: "ウエハースカード 零夜",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [26]
   },
@@ -412,6 +464,7 @@ const goods = [
     name: "ウエハースカード ホロ 零夜",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [26]
   },
@@ -420,6 +473,7 @@ const goods = [
     name: "ウエハースカード ルルカ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [27]
   },
@@ -428,6 +482,7 @@ const goods = [
     name: "ウエハースカード ホロ ルルカ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [27]
   },
@@ -436,6 +491,7 @@ const goods = [
     name: "ウエハースカード ピエール 77世",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [28]
   },
@@ -444,6 +500,7 @@ const goods = [
     name: "ウエハースカード ホロ ピエール 77世",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [28]
   },
@@ -452,6 +509,7 @@ const goods = [
     name: "ウエハースカード 狐ヶ咲 甘色",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [29]
   },
@@ -460,6 +518,7 @@ const goods = [
     name: "ウエハースカード ホロ 狐ヶ咲 甘色",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [29]
   },
@@ -468,6 +527,7 @@ const goods = [
     name: "ウエハースカード HM-WA100 ニーズヘッグ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [30]
   },
@@ -476,6 +536,7 @@ const goods = [
     name: "ウエハースカード ホロ HM-WA100 ニーズヘッグ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [30]
   },
@@ -484,6 +545,7 @@ const goods = [
     name: "ウエハースカード ゲームバズーカガール",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [31]
   },
@@ -492,6 +554,7 @@ const goods = [
     name: "ウエハースカード ホロ ゲームバズーカガール",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [31]
   },
@@ -500,6 +563,7 @@ const goods = [
     name: "ウエハースカード 青春 アリス",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [32]
   },
@@ -508,6 +572,7 @@ const goods = [
     name: "ウエハースカード ホロ 青春 アリス",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [32]
   },
@@ -516,6 +581,7 @@ const goods = [
     name: "ウエハースカード イグニス＝ウィル＝ウィスプ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [33]
   },
@@ -524,6 +590,7 @@ const goods = [
     name: "ウエハースカード ホロ イグニス＝ウィル＝ウィスプ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [33]
   },
@@ -532,6 +599,7 @@ const goods = [
     name: "ウエハースカード 糸廻 輪廻",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [34]
   },
@@ -540,6 +608,7 @@ const goods = [
     name: "ウエハースカード ホロ 糸廻 輪廻",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [34]
   },
@@ -548,6 +617,7 @@ const goods = [
     name: "ウエハースカード Bugdoll",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [35]
   },
@@ -556,6 +626,7 @@ const goods = [
     name: "ウエハースカード ホロ Bugdoll",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [35]
   },
@@ -564,6 +635,7 @@ const goods = [
     name: "ウエハースカード ステリア・ララ・シルワ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [36]
   },
@@ -572,6 +644,7 @@ const goods = [
     name: "ウエハースカード ホロ ステリア・ララ・シルワ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [36]
   },
@@ -580,6 +653,7 @@ const goods = [
     name: "ウエハースカード ラヴィ・シュシュマルシュ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [37]
   },
@@ -588,6 +662,7 @@ const goods = [
     name: "ウエハースカード ホロ ラヴィ・シュシュマルシュ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [37]
   },
@@ -596,6 +671,7 @@ const goods = [
     name: "ウエハースカード アル・ダハブ＝アルカティア",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [38]
   },
@@ -604,6 +680,7 @@ const goods = [
     name: "ウエハースカード ホロ アル・ダハブ＝アルカティア",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [38]
   },
@@ -612,6 +689,7 @@ const goods = [
     name: "ウエハースカード 天空王 ぶれいずどらごん",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [39]
   },
@@ -620,6 +698,7 @@ const goods = [
     name: "ウエハースカード ホロ 天空王 ぶれいずどらごん",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [39]
   },
@@ -628,6 +707,7 @@ const goods = [
     name: "ウエハースカード 某〈なにがし〉",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [40]
   },
@@ -636,6 +716,7 @@ const goods = [
     name: "ウエハースカード ホロ 某〈なにがし〉",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [40]
   },
@@ -644,6 +725,7 @@ const goods = [
     name: "ウエハースカード クー・シー",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [41]
   },
@@ -652,6 +734,7 @@ const goods = [
     name: "ウエハースカード ホロ クー・シー",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [41]
   },
@@ -660,6 +743,7 @@ const goods = [
     name: "ウエハースカード アミスター＝バランディン",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [42]
   },
@@ -668,6 +752,7 @@ const goods = [
     name: "ウエハースカード ホロ アミスター＝バランディン",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [42]
   },
@@ -676,6 +761,7 @@ const goods = [
     name: "ウエハースカード 鬼ヶ式 うら",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [43]
   },
@@ -684,6 +770,7 @@ const goods = [
     name: "ウエハースカード ホロ 鬼ヶ式 うら",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [43]
   },
@@ -692,6 +779,7 @@ const goods = [
     name: "ウエハースカード コラプス",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [44]
   },
@@ -700,6 +788,7 @@ const goods = [
     name: "ウエハースカード ホロ コラプス",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [44]
   },
@@ -708,6 +797,7 @@ const goods = [
     name: "ウエハースカード みりぽゆ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [45]
   },
@@ -716,6 +806,7 @@ const goods = [
     name: "ウエハースカード ホロ みりぽゆ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [45]
   },
@@ -724,6 +815,7 @@ const goods = [
     name: "ウエハースカード チーちゃん",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [46]
   },
@@ -732,6 +824,7 @@ const goods = [
     name: "ウエハースカード ホロ チーちゃん",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [46]
   },
@@ -740,6 +833,7 @@ const goods = [
     name: "ウエハースカード ペルリニエ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [47]
   },
@@ -748,6 +842,7 @@ const goods = [
     name: "ウエハースカード ホロ ペルリニエ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [47]
   },
@@ -756,6 +851,7 @@ const goods = [
     name: "ウエハースカード メルーニャ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [48]
   },
@@ -764,6 +860,7 @@ const goods = [
     name: "ウエハースカード ホロ メルーニャ",
     type: "カード",
     image: "",
+    price: 290,
     seriesId: "0001",
     heroTags: [48]
   },
