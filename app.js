@@ -1,8 +1,7 @@
 const series = {
   id: "0001",
-  name: "#コンパス 戦闘摂理解析システム トレーディングカード付きウエハース",
+  name: "...",
   releaseDate: "2026/05/09",
-  price: 290,
   janCode: "4573668402579"
 };
 
@@ -87,7 +86,6 @@ function saveCounts(){
 
 document.getElementById("series-name").textContent = series.name;
 document.getElementById("release-date").textContent = series.releaseDate;
-document.getElementById("price").textContent = series.price;
 document.getElementById("jan-code").textContent = series.janCode;
 
 document.getElementById("hero-list").innerHTML =
@@ -299,7 +297,7 @@ ${imageHtml}
 
     <p><b>発売日</b><br>${goodsSeries.releaseDate}</p>
 
-    <p><b>価格</b><br>${goodsSeries.price}円</p>
+    <p><b>価格</b><br>${item.price}円</p>
 
     <p><b>対象ヒーロー</b><br>${heroNames}</p>
 
