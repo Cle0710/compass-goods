@@ -169,19 +169,31 @@ document.getElementById("goods-list").innerHTML =
             `
         }
 
-        <div>
+        <div
+          style="
+            flex:1;
+            min-width:0;
+          "
+        >
 
           <div
             style="
               font-size:20px;
               font-weight:bold;
               line-height:1.3;
+              word-break:break-word;
+              overflow-wrap:anywhere;
             "
           >
             ${item.name}
           </div>
 
-          <div>
+          <div
+            style="
+              word-break:break-word;
+              overflow-wrap:anywhere;
+            "
+          >
             対象ヒーロー: ${tags}
           </div>
 
