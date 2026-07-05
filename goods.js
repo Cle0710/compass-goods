@@ -870,7 +870,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [1, 2, 3, 4]
   },
   {
@@ -879,7 +879,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [5, 6, 7, 8]
   },
   {
@@ -888,7 +888,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [9, 10, 11, 12]
   },
   {
@@ -897,7 +897,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [13, 14, 15, 16]
   },
   {
@@ -906,7 +906,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [17, 18, 19, 20]
   },
   {
@@ -915,7 +915,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [21, 22, 23, 24]
   },
   {
@@ -924,7 +924,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [25, 26, 27, 28]
   },
   {
@@ -933,7 +933,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [29, 30, 31, 32]
   },
   {
@@ -942,7 +942,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [33, 34, 35, 36]
   },
   {
@@ -951,7 +951,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [37, 38, 39, 40]
   },
   {
@@ -960,7 +960,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [41, 42, 43, 44]
   },
   {
@@ -969,7 +969,7 @@ const goods = [
     type: "シール",
     image: "",
     seriesId: "0001",
-    price: 290,
+    price: 0,
     heroTags: [45, 46, 47, 48]
   },
 ];
