@@ -171,9 +171,19 @@ document.getElementById("goods-list").innerHTML =
 
         <div>
 
-          <b>${item.name}</b><br>
+          <div
+            style="
+              font-size:20px;
+              font-weight:bold;
+              line-height:1.3;
+            "
+          >
+            ${item.name}
+          </div>
 
-          対象ヒーロー: ${tags}
+          <div>
+            対象ヒーロー: ${tags}
+          </div>
 
         </div>
 
