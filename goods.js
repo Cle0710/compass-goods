@@ -972,4 +972,454 @@ const goods = [
     price: 0,
     heroTags: [45, 46, 47, 48]
   },
+  {
+    id: "0002-001",
+    name: "ポッピンヒーローズ ラバーストラップF 十文字 アタリ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [1]
+  },
+  {
+    id: "0002-002",
+    name: "ポッピンヒーローズ ラバーストラップC ジャスティス ハンコック",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [2]
+  },
+  {
+    id: "0002-003",
+    name: "ポッピンヒーローズ ラバーストラップF リリカ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [3]
+  },
+  {
+    id: "0002-004",
+    name: "ポッピンヒーローズ ラバーストラップB 双挽 乃保",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [4]
+  },
+  {
+    id: "0002-005",
+    name: "ポッピンヒーローズ ラバーストラップD 桜華 忠臣",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [5]
+  },
+  {
+    id: "0002-006",
+    name: "ポッピンヒーローズ ラバーストラップF ジャンヌ ダルク",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [6]
+  },
+  {
+    id: "0002-007",
+    name: "ポッピンヒーローズ ラバーストラップB マルコス'55",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [7]
+  },
+  {
+    id: "0002-008",
+    name: "ポッピンヒーローズ ラバーストラップA ルチアーノ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [8]
+  },
+  {
+    id: "0002-009",
+    name: "ポッピンヒーローズ ラバーストラップE Voidoll",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [9]
+  },
+  {
+    id: "0002-010",
+    name: "ポッピンヒーローズ ラバーストラップD 深川 まとい",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [10]
+  },
+  {
+    id: "0002-011",
+    name: "ポッピンヒーローズ ラバーストラップF グスタフ ハイドリヒ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [11]
+  },
+  {
+    id: "0002-012",
+    name: "ポッピンヒーローズ ラバーストラップE ニコラ テスラ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [12]
+  },
+  {
+    id: "0002-013",
+    name: "ポッピンヒーローズ ラバーストラップA ヴィオレッタ ノワール",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [13]
+  },
+  {
+    id: "0002-014",
+    name: "ポッピンヒーローズ ラバーストラップE コクリコット ブランシュ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [14]
+  },
+  {
+    id: "0002-015",
+    name: "ポッピンヒーローズ ラバーストラップB マリア＝S＝レオンブルク",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [15]
+  },
+  {
+    id: "0002-016",
+    name: "ポッピンヒーローズ ラバーストラップA アダム＝ユーリエフ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [16]
+  },
+  {
+    id: "0002-017",
+    name: "ポッピンヒーローズ ラバーストラップD 13†サーティーン†",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [17]
+  },
+  {
+    id: "0002-018",
+    name: "ポッピンヒーローズ ラバーストラップA かけだし勇者",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [18]
+  },
+  {
+    id: "0002-019",
+    name: "ポッピンヒーローズ ラバーストラップE メグメグ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [19]
+  },
+  {
+    id: "0002-020",
+    name: "ポッピンヒーローズ ラバーストラップC イスタカ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [20]
+  },
+  {
+    id: "0002-021",
+    name: "ポッピンヒーローズ ラバーストラップA 輝龍院 きらら",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [21]
+  },
+  {
+    id: "0002-022",
+    name: "ポッピンヒーローズ ラバーストラップB ヴィーナス ポロロッチョ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [22]
+  },
+  {
+    id: "0002-023",
+    name: "ポッピンヒーローズ ラバーストラップD ソーン＝ユーリエフ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [23]
+  },
+  {
+    id: "0002-024",
+    name: "ポッピンヒーローズ ラバーストラップC デビルミント鬼龍 デルミン",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [24]
+  },
+  {
+    id: "0002-025",
+    name: "ポッピンヒーローズ ラバーストラップE トマス",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [25]
+  },
+  {
+    id: "0002-026",
+    name: "ポッピンヒーローズ ラバーストラップD 零夜",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [26]
+  },
+  {
+    id: "0002-027",
+    name: "ポッピンヒーローズ ラバーストラップA ルルカ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [27]
+  },
+  {
+    id: "0002-028",
+    name: "ポッピンヒーローズ ラバーストラップD ピエール 77世",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [28]
+  },
+  {
+    id: "0002-029",
+    name: "ポッピンヒーローズ ラバーストラップC 狐ヶ咲 甘色",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [29]
+  },
+  {
+    id: "0002-030",
+    name: "ポッピンヒーローズ ラバーストラップF HM-WA100 ニーズヘッグ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [30]
+  },
+  {
+    id: "0002-031",
+    name: "ポッピンヒーローズ ラバーストラップB ゲームバズーカガール",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [31]
+  },
+  {
+    id: "0002-032",
+    name: "ポッピンヒーローズ ラバーストラップA 青春 アリス",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [32]
+  },
+  {
+    id: "0002-033",
+    name: "ポッピンヒーローズ ラバーストラップC イグニス＝ウィル＝ウィスプ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [33]
+  },
+  {
+    id: "0002-034",
+    name: "ポッピンヒーローズ ラバーストラップB 糸廻 輪廻",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [34]
+  },
+  {
+    id: "0002-035",
+    name: "ポッピンヒーローズ ラバーストラップA Bugdoll",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [35]
+  },
+  {
+    id: "0002-036",
+    name: "ポッピンヒーローズ ラバーストラップD ステリア・ララ・シルワ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [36]
+  },
+  {
+    id: "0002-037",
+    name: "ポッピンヒーローズ ラバーストラップE ラヴィ・シュシュマルシュ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [37]
+  },
+  {
+    id: "0002-038",
+    name: "ポッピンヒーローズ ラバーストラップF アル・ダハブ＝アルカティア",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [38]
+  },
+  {
+    id: "0002-039",
+    name: "ポッピンヒーローズ ラバーストラップE 天空王 ぶれいずどらごん",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [39]
+  },
+  {
+    id: "0002-040",
+    name: "ポッピンヒーローズ ラバーストラップF 某〈なにがし〉",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [40]
+  },
+  {
+    id: "0002-041",
+    name: "ポッピンヒーローズ ラバーストラップC クー・シー",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [41]
+  },
+  {
+    id: "0002-042",
+    name: "ポッピンヒーローズ ラバーストラップB アミスター＝バランディン",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [42]
+  },
+  {
+    id: "0002-043",
+    name: "ポッピンヒーローズ ラバーストラップE 鬼ヶ式 うら",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [43]
+  },
+  {
+    id: "0002-044",
+    name: "ポッピンヒーローズ ラバーストラップC コラプス",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [44]
+  },
+  {
+    id: "0002-045",
+    name: "ポッピンヒーローズ ラバーストラップD みりぽゆ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [45]
+  },
+  {
+    id: "0002-046",
+    name: "ポッピンヒーローズ ラバーストラップB チーちゃん",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [46]
+  },
+  {
+    id: "0002-047",
+    name: "ポッピンヒーローズ ラバーストラップC ペルリニエ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [47]
+  },
+  {
+    id: "0002-048",
+    name: "ポッピンヒーローズ ラバーストラップF メルーニャ",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [48]
+  },
+  {
+    id: "0002-049",
+    name: "ポッピンヒーローズ ラバーストラップA †ファースト†",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [49]
+  },
+  {
+    id: "0002-050",
+    name: "ポッピンヒーローズ ラバーストラップB シャルル・リヒター",
+    type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [50]
+  },
 ];
