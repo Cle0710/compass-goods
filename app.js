@@ -1,9 +1,18 @@
-const series = {
-  id: "0001",
-  name: "#コンパス 戦闘摂理解析システム トレーディングカード付きウエハース",
-  releaseDate: "2026/05/09",
-  janCode: "4573668402579"
-};
+const series = [
+
+  {
+    id: "0001",
+    name: "#コンパス 戦闘摂理解析システム トレーディングカード付きウエハース",
+    releaseDate: "2026/05/09",
+    janCode: "4573668402579"
+  },
+  {
+    id: "0002",
+    name: "ポッピンヒーローズ",
+    releaseDate: "2026/07/26",
+    janCode: ""
+  }
+];
 
 const heroes = [
   { id: 1, name: "十文字 アタリ" },
@@ -70,6 +79,8 @@ let displayedCounts =
 
 let selectedHeroId = null;
 
+let selectedSeriesId = null;
+
 function saveCounts(){
 
   localStorage.setItem(
@@ -84,10 +95,6 @@ function saveCounts(){
 
 }
 
-document.getElementById("series-name").textContent = series.name;
-document.getElementById("release-date").textContent = series.releaseDate;
-document.getElementById("jan-code").textContent = series.janCode;
-
 document.getElementById("hero-list").innerHTML =
   heroes.map(hero => `
     <button
@@ -99,14 +106,33 @@ document.getElementById("hero-list").innerHTML =
     </button>
   `).join("");
 
+document.getElementById("series-list").innerHTML =
+  series.map(item => `
+    <button
+      id="series-${item.id}"
+      class="series-button"
+      onclick="selectSeries('${item.id}')"
+    >
+      ${item.name}
+    </button>
+  `).join("");
+
 function renderGoods() {
 
-const filteredGoods =
-  selectedHeroId === null
-    ? goods
-    : goods.filter(item =>
-        item.heroTags.includes(selectedHeroId)
-      );
+  const filteredGoods =
+    goods.filter(item => {
+
+      const matchesHero =
+        selectedHeroId === null ||
+        item.heroTags.includes(selectedHeroId);
+
+      const matchesSeries =
+        selectedSeriesId === null ||
+        item.seriesId === selectedSeriesId;
+
+      return matchesHero && matchesSeries;
+
+    });
 
 document.getElementById("goods-count").textContent =
   filteredGoods.length + "件";
@@ -232,6 +258,28 @@ document
   renderGoods();
 }
 
+function selectSeries(seriesId) {
+
+  selectedSeriesId = seriesId;
+
+  document
+    .querySelectorAll(".series-button")
+    .forEach(button =>
+      button.classList.remove("selected-series")
+    );
+
+  document
+    .getElementById(`series-${seriesId}`)
+    .classList.add("selected-series");
+
+  document
+    .getElementById("all-series-button")
+    .classList.remove("selected-series");
+
+  renderGoods();
+
+}
+
 function showAllHeroes() {
 
   selectedHeroId = null;
@@ -250,6 +298,24 @@ function showAllHeroes() {
     "全ヒーロー表示中";
 
   renderGoods();
+}
+
+function showAllSeries() {
+
+  selectedSeriesId = null;
+
+  document
+    .querySelectorAll(".series-button")
+    .forEach(button =>
+      button.classList.remove("selected-series")
+    );
+
+  document
+    .getElementById("all-series-button")
+    .classList.add("selected-series");
+
+  renderGoods();
+
 }
 
 function showGoodsDetail(goodsId) {
