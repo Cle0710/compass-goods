@@ -61,7 +61,7 @@ const heroes = [
   { id: 44, name: "コラプス" },
   { id: 45, name: "みりぽゆ" },
   { id: 46, name: "チーちゃん" },
-  { id: 47, name: "ペルリニエ" },
+  { id: 47, name: "ーペルリニエ" },
   { id: 48, name: "メルーニャ" },
   { id: 49, name: "†ファースト†" },
   { id: 50, name: "シャルル・リヒター" }
@@ -330,7 +330,8 @@ function showGoodsDetail(goodsId) {
       )
       .join("、");
 
-  const goodsSeries = series;
+  const goodsSeries =
+  series.find(s => s.id === item.seriesId);
 
   const stored =
     storedCounts[item.id] || 0;
