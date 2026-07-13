@@ -830,7 +830,7 @@ const goods = [
   },
   {
     id: "0001-093",
-    name: "ウエハースカード ペルリニエ",
+    name: "ウエハースカード ーペルリニエ",
     type: "カード",
     image: "",
     price: 290,
@@ -839,7 +839,7 @@ const goods = [
   },
   {
     id: "0001-094",
-    name: "ウエハースカード ホロ ペルリニエ",
+    name: "ウエハースカード ホロ ーペルリニエ",
     type: "カード",
     image: "",
     price: 290,
@@ -965,7 +965,7 @@ const goods = [
   },
   {
     id: "0001-108",
-    name: "ウエハースカード 特典 みりぽゆ、チーちゃん、ペルリニエ、メルーニャ",
+    name: "ウエハースカード 特典 みりぽゆ、チーちゃん、ーペルリニエ、メルーニャ",
     type: "シール",
     image: "",
     seriesId: "0001",
@@ -1388,7 +1388,7 @@ const goods = [
   },
   {
     id: "0002-047",
-    name: "ポッピンヒーローズ ラバーストラップC ペルリニエ",
+    name: "ポッピンヒーローズ ラバーストラップC ーペルリニエ",
     type: "ラバーストラップ",
     image: "",
     seriesId: "0002",
@@ -1417,6 +1417,456 @@ const goods = [
     id: "0002-050",
     name: "ポッピンヒーローズ ラバーストラップB シャルル・リヒター",
     type: "ラバーストラップ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [50]
+  },
+  {
+    id: "0002-051",
+    name: "ポッピンヒーローズ 缶バッジF 十文字 アタリ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [1]
+  },
+  {
+    id: "0002-052",
+    name: "ポッピンヒーローズ 缶バッジC ジャスティス ハンコック",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [2]
+  },
+  {
+    id: "0002-053",
+    name: "ポッピンヒーローズ 缶バッジF リリカ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [3]
+  },
+  {
+    id: "0002-054",
+    name: "ポッピンヒーローズ 缶バッジB 双挽 乃保",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [4]
+  },
+  {
+    id: "0002-055",
+    name: "ポッピンヒーローズ 缶バッジD 桜華 忠臣",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [5]
+  },
+  {
+    id: "0002-056",
+    name: "ポッピンヒーローズ 缶バッジF ジャンヌ ダルク",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [6]
+  },
+  {
+    id: "0002-057",
+    name: "ポッピンヒーローズ 缶バッジB マルコス'55",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [7]
+  },
+  {
+    id: "0002-058",
+    name: "ポッピンヒーローズ 缶バッジA ルチアーノ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [8]
+  },
+  {
+    id: "0002-059",
+    name: "ポッピンヒーローズ 缶バッジE Voidoll",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [9]
+  },
+  {
+    id: "0002-060",
+    name: "ポッピンヒーローズ 缶バッジD 深川 まとい",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [10]
+  },
+  {
+    id: "0002-061",
+    name: "ポッピンヒーローズ 缶バッジF グスタフ ハイドリヒ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [11]
+  },
+  {
+    id: "0002-062",
+    name: "ポッピンヒーローズ 缶バッジE ニコラ テスラ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [12]
+  },
+  {
+    id: "0002-063",
+    name: "ポッピンヒーローズ 缶バッジA ヴィオレッタ ノワール",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [13]
+  },
+  {
+    id: "0002-064",
+    name: "ポッピンヒーローズ 缶バッジE コクリコット ブランシュ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [14]
+  },
+  {
+    id: "0002-065",
+    name: "ポッピンヒーローズ 缶バッジB マリア＝S＝レオンブルク",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [15]
+  },
+  {
+    id: "0002-066",
+    name: "ポッピンヒーローズ 缶バッジA アダム＝ユーリエフ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [16]
+  },
+  {
+    id: "0002-067",
+    name: "ポッピンヒーローズ 缶バッジD 13†サーティーン†",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [17]
+  },
+  {
+    id: "0002-068",
+    name: "ポッピンヒーローズ 缶バッジA かけだし勇者",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [18]
+  },
+  {
+    id: "0002-069",
+    name: "ポッピンヒーローズ 缶バッジE メグメグ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [19]
+  },
+  {
+    id: "0002-070",
+    name: "ポッピンヒーローズ 缶バッジC イスタカ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [20]
+  },
+  {
+    id: "0002-071",
+    name: "ポッピンヒーローズ 缶バッジA 輝龍院 きらら",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [21]
+  },
+  {
+    id: "0002-072",
+    name: "ポッピンヒーローズ 缶バッジB ヴィーナス ポロロッチョ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [22]
+  },
+  {
+    id: "0002-073",
+    name: "ポッピンヒーローズ 缶バッジD ソーン＝ユーリエフ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [23]
+  },
+  {
+    id: "0002-074",
+    name: "ポッピンヒーローズ 缶バッジC デビルミント鬼龍 デルミン",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [24]
+  },
+  {
+    id: "0002-075",
+    name: "ポッピンヒーローズ 缶バッジE トマス",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [25]
+  },
+  {
+    id: "0002-076",
+    name: "ポッピンヒーローズ 缶バッジD 零夜",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [26]
+  },
+  {
+    id: "0002-077",
+    name: "ポッピンヒーローズ 缶バッジA ルルカ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [27]
+  },
+  {
+    id: "0002-078",
+    name: "ポッピンヒーローズ 缶バッジD ピエール 77世",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [28]
+  },
+  {
+    id: "0002-079",
+    name: "ポッピンヒーローズ 缶バッジC 狐ヶ咲 甘色",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [29]
+  },
+  {
+    id: "0002-080",
+    name: "ポッピンヒーローズ 缶バッジF HM-WA100 ニーズヘッグ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [30]
+  },
+  {
+    id: "0002-081",
+    name: "ポッピンヒーローズ 缶バッジB ゲームバズーカガール",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [31]
+  },
+  {
+    id: "0002-082",
+    name: "ポッピンヒーローズ 缶バッジA 青春 アリス",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [32]
+  },
+  {
+    id: "0002-083",
+    name: "ポッピンヒーローズ 缶バッジC イグニス＝ウィル＝ウィスプ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [33]
+  },
+  {
+    id: "0002-084",
+    name: "ポッピンヒーローズ 缶バッジB 糸廻 輪廻",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [34]
+  },
+  {
+    id: "0002-085",
+    name: "ポッピンヒーローズ 缶バッジA Bugdoll",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [35]
+  },
+  {
+    id: "0002-086",
+    name: "ポッピンヒーローズ 缶バッジD ステリア・ララ・シルワ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [36]
+  },
+  {
+    id: "0002-087",
+    name: "ポッピンヒーローズ 缶バッジE ラヴィ・シュシュマルシュ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [37]
+  },
+  {
+    id: "0002-088",
+    name: "ポッピンヒーローズ 缶バッジF アル・ダハブ＝アルカティア",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [38]
+  },
+  {
+    id: "0002-089",
+    name: "ポッピンヒーローズ 缶バッジE 天空王 ぶれいずどらごん",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [39]
+  },
+  {
+    id: "0002-090",
+    name: "ポッピンヒーローズ 缶バッジF 某〈なにがし〉",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [40]
+  },
+  {
+    id: "0002-091",
+    name: "ポッピンヒーローズ 缶バッジC クー・シー",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [41]
+  },
+  {
+    id: "0002-092",
+    name: "ポッピンヒーローズ 缶バッジB アミスター＝バランディン",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [42]
+  },
+  {
+    id: "0002-093",
+    name: "ポッピンヒーローズ 缶バッジE 鬼ヶ式 うら",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [43]
+  },
+  {
+    id: "0002-094",
+    name: "ポッピンヒーローズ 缶バッジC コラプス",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [44]
+  },
+  {
+    id: "0002-095",
+    name: "ポッピンヒーローズ 缶バッジD みりぽゆ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [45]
+  },
+  {
+    id: "0002-096",
+    name: "ポッピンヒーローズ 缶バッジB チーちゃん",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [46]
+  },
+  {
+    id: "0002-097",
+    name: "ポッピンヒーローズ 缶バッジC ーペルリニエ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [47]
+  },
+  {
+    id: "0002-098",
+    name: "ポッピンヒーローズ 缶バッジF メルーニャ",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [48]
+  },
+  {
+    id: "0002-099",
+    name: "ポッピンヒーローズ 缶バッジA †ファースト†",
+    type: "缶バッジ",
+    image: "",
+    seriesId: "0002",
+    price: 750,
+    heroTags: [49]
+  },
+  {
+    id: "0002-100",
+    name: "ポッピンヒーローズ 缶バッジB シャルル・リヒター",
+    type: "缶バッジ",
     image: "",
     seriesId: "0002",
     price: 750,
